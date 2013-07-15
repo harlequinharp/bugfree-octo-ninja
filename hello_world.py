@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from math import pi	
 def hello_world():
 	print('Hello, world!')
 	
@@ -16,3 +17,13 @@ class ShibaInu:
 		print('Please could I have some of that?')
 	def howl(self):
 		print('AROooooOOOOOooOoOOoOOOOoooOOOOOOOoooo!')
+		
+class SpherePet:
+	def __init__(self, position, radius):
+		self.position=position
+		self.radius=radius	
+		
+	def tell_stats(self):
+		print('My volume is {volume} and my position is {position}.'.format(volume=(4/3)*pi*(self.radius**3), position=self.position))
+		
+		
